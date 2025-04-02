@@ -1,0 +1,10 @@
+ALGORITHM algorithm_name
+VAR
+    n=INTEGER
+BEGIN
+    REPEAT
+        write("Enter a positive number: ")
+        read(n)
+    UNTIL (n>0)
+    write("end")
+END

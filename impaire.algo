@@ -1,0 +1,10 @@
+ALGORITHM algorithm_name
+VAR
+    n=INTEGER
+BEGIN
+    read(n);
+    WHILE (n % 2 = 0) DO
+        n := n / 2;
+    END_WHILE
+    write(n);
+END

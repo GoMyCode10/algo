@@ -1,0 +1,18 @@
+ALGORITHM SMALLZ
+VAR
+    arr : ARRAY_OF STRING[n];
+    n : INTEGER;
+BEGIN
+    Read(n);
+    FOR i FROM 0 TO n-1 DO
+        Read(arr[i]);
+    END_FOR
+    s=0
+    max := arr[0];
+    FOR i FROM 1 TO n-1 DO
+        IF (length(max) > length(arr[i])) THEN
+            max:= max + arr[i];
+        END_IF
+    END_FOR
+    Write("longest = ", max);
+END

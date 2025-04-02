@@ -1,0 +1,26 @@
+ALGORITHM algorithm_name
+VAR
+    prix: ARRAY_OF FLOAT[n];
+    qte: ARRAY_OF INTEGER[n];
+    n,i : INTEGER;
+    tot: FLOAT;
+BEGIN
+    REPEAT
+        Write("enter a positive number")
+        Read(n)
+    UNTIL (n > 0)
+
+    FOR i FROM 0 TO n - 1 DO
+        Write("enter price of element n°", i)
+        Read(prix[i])
+        Write("enter qte of element n°", i)
+        Read(qte[i])
+    END_FOR
+
+    tot := 0;
+    FOR i FROM 0 TO n - 1 DO
+        tot := tot + prix[i] * qte[i]
+    END_FOR
+
+    Write("total= ", tot)
+END

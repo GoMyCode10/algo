@@ -1,0 +1,23 @@
+ALGORITHM checkpoint
+VAR
+    str=STRING;
+    l,m,n=INTEGER;
+BEGIN
+    write("Enter a sentence: ");
+    read(str);
+    l=0;
+    m=0;
+    n=0;
+    FOR i FROM 0 TO lenght(str)-1 DO
+        IF (str[i] = " ") THEN
+            l=l+1;
+        END_IF
+        IF (lower(str[i]) in "aeuiyo") THEN
+            m=m+1;
+        END_IF
+        n=n+1;
+    END_FOR
+    write("Number of words: ", l+1);
+    write("Number of vowels: ", m);
+    write("Number of characters: ", n);
+END

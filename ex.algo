@@ -1,0 +1,9 @@
+ALGORITHM algorithm_name
+VAR
+    str=string
+BEGIN
+    REPEAT
+        write("Enter a string: ")
+        read(str)
+    UNTIL (length(str)>8)
+END

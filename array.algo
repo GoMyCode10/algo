@@ -1,0 +1,39 @@
+ALGORITHM arrays
+VAR
+    arr : ARRAY_OF : INTEGER[10];
+    sum,i : INTEGER
+BEGIN
+    FOR i FROM 0 TO 9 DO
+        read(arr[i]);
+    END_FOR
+    sum := 0;
+    FOR i FROM 0 TO 9 DO
+        sum := sum + arr[i];
+    END_FOR
+    write("sum=",sum);
+END
+
+
+
+ALGORITHM arrays
+VAR
+    arr : ARRAY_OF INTEGER[n];
+    count, i, n : INTEGER;
+BEGIN
+    Write("enter size of array")
+    Read(n)
+
+    FOR i FROM 0 TO n - 1 DO
+        Write("enter element n°", i);
+        Read(arr[i])
+    END_FOR
+
+    count := 0;
+    FOR i FROM 0 TO arr.length - 1 DO
+        IF (arr[i] > 10) THEN
+            count := count + 1;
+        END_IF
+    END_FOR
+
+    Write("nbre of element sup 10 :" , count)
+END

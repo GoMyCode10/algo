@@ -1,0 +1,15 @@
+ALGORITHM num-mots
+VAR
+    ch=STRING
+    s=INTEGER
+BEGIN
+    write("Enter a string: ")
+    read(ch)
+    s:=0
+    FOR i FOR 0 TO length(ch)-1 DO
+        IF (ch[i] = " ") THEN
+            s:= s+1
+        END_IF
+    END_FOR
+    write("Number of words=",s+1)
+END
